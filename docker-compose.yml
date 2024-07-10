@@ -1,0 +1,42 @@
+version: '3.7'
+
+services:
+  db:
+    image: mysql:latest
+    platform: linux/x86_64
+    container_name: ft_mysql
+    command: mysqld --transaction-isolation=READ-COMMITTED --default-authentication-plugin=mysql_native_password --character-set-server=utf8mb4 --collation-server=utf8mb4_unicode_ci
+    environment:
+      MYSQL_DATABASE: "drupal"
+      MYSQL_USER: "dev"
+      MYSQL_PASSWORD: "root"
+      MYSQL_ROOT_PASSWORD: "root"
+    volumes:
+      - mysql_vol:/var/lib/mysql
+      - ./docker/db/dump:/docker-entrypoint-initdb.d
+    ports:
+      - '39991:3306'
+
+  drupal:
+    image: frb-typeform/drupal:10.1.5
+    build:
+      context: ./docker
+      dockerfile: drupal.Dockerfile
+    command: sh -c "/var/www/scripts/boot_drupal.sh && apache2-foreground"
+    environment:
+      DRUPAL_DB_HOST: "db"
+      DRUPAL_DB_NAME: "drupal"
+      DRUPAL_DB_USER: "dev"
+      DRUPAL_DB_PASSWORD: "root"
+      INSTALL_FLAG: "OFF"
+    container_name: ft_drupal
+    working_dir: /opt/drupal
+    ports:
+      - "8080:80"
+    volumes:
+      - ./web:/opt/drupal
+    depends_on:
+      - db
+
+volumes:
+  mysql_vol:
