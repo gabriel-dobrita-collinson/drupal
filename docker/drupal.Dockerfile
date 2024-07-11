@@ -11,7 +11,6 @@ RUN docker-php-ext-install zip
 RUN mkdir -p /var/www/scripts
 
 COPY scripts/boot_drupal.sh /var/www/scripts/boot_drupal.sh
-COPY final_backup.sql /var/www/scripts/final_backup.sql
 
 RUN chmod +x /var/www/scripts/boot_drupal.sh
 
