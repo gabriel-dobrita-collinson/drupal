@@ -1,0 +1,16 @@
+hello_world.content:
+  path: '/hello-world'
+  defaults:
+    _controller: 'Drupal\hello_world\Controller\HelloWorldController::content'
+    _title: 'Hello World'
+  requirements:
+    _permission: 'access content'
+
+
+hello_world.second_route:
+  path: '/second-route'
+  defaults:
+    _controller: 'Drupal\hello_world\Controller\HelloWorldController::secondRoute'
+    _title: 'Second Route'
+  requirements:
+    _permission: 'access content'
