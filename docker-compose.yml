@@ -28,6 +28,7 @@ services:
       DRUPAL_DB_NAME: "drupal"
       DRUPAL_DB_USER: "dev"
       DRUPAL_DB_PASSWORD: "root"
+      INSTALL_FLAG: "OFF"
     container_name: drupal
     working_dir: /opt/drupal
     ports:
