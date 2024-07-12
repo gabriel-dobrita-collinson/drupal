@@ -19,12 +19,7 @@ else
   drush cim -y
 fi
 
-site_uuid=$(drush cget system.site uuid)
-config_uuid=$(grep uuid /opt/drupal/web/config/sync/system.site.yml)
-if [[ "$site_uuid" != "$config_uuid" ]]; then
-  echo "Setting correct site UUID..."
-  drush cset system.site uuid $config_uuid -y
-fi
+drush cset system.site uuid "6742db5b-4870-4f75-931e-5d212b1e7cf9"
 
 drush cache-rebuild
 
