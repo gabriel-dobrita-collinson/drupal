@@ -273,7 +273,7 @@ $databases = [];
  *
  * This variable will be set to a random value by the installer. All one-time
  * login links will be invalidated if the value is changed. Note that if your
- * site is deployed on a cluster of cms servers, you must ensure that this
+ * site is deployed on a cluster of web servers, you must ensure that this
  * variable has the same value on each server.
  *
  * For enhanced security, you may set this variable to the contents of a file
@@ -330,7 +330,7 @@ $settings['update_free_access'] = FALSE;
 /**
  * External access proxy settings:
  *
- * If your site must access the Internet via a cms proxy then you can enter the
+ * If your site must access the Internet via a web proxy then you can enter the
  * proxy settings here. Set the full URL of the proxy, including the port, in
  * variables:
  * - $settings['http_client_config']['proxy']['http']: The proxy URL for HTTP
@@ -429,7 +429,7 @@ $settings['update_free_access'] = FALSE;
  *
  * By default, Drupal sends a "Vary: Cookie" HTTP header for anonymous page
  * views. This tells a HTTP proxy that it may return a page from its local
- * cache without contacting the cms server, if the user sends the same Cookie
+ * cache without contacting the web server, if the user sends the same Cookie
  * header as the user who originally requested the cached page. Without "Vary:
  * Cookie", authenticated users would also be served the anonymous page from
  * the cache. If the site has mostly anonymous users except a few known
@@ -480,7 +480,7 @@ $settings['update_free_access'] = FALSE;
  *
  * The Update Manager module included with Drupal provides a mechanism for
  * site administrators to securely install missing updates for the site
- * directly through the cms user interface. On securely-configured servers,
+ * directly through the web user interface. On securely-configured servers,
  * the Update manager will require the administrator to provide SSH or FTP
  * credentials before allowing the installation to proceed; this allows the
  * site to update the new files as the user who owns all the Drupal files,
@@ -512,7 +512,7 @@ $settings['update_free_access'] = FALSE;
  *
  * A local file system path where optimized assets will be stored. This directory
  * must exist and be writable by Drupal. This directory must be relative to
- * the Drupal installation directory and be accessible over the cms.
+ * the Drupal installation directory and be accessible over the web.
  */
 # $settings['file_assets_path'] = 'sites/default/files';
 
@@ -534,7 +534,7 @@ $settings['update_free_access'] = FALSE;
  *
  * A local file system path where public files will be stored. This directory
  * must exist and be writable by Drupal. This directory must be relative to
- * the Drupal installation directory and be accessible over the cms.
+ * the Drupal installation directory and be accessible over the web.
  */
 # $settings['file_public_path'] = 'sites/default/files';
 
@@ -602,7 +602,7 @@ $settings['update_free_access'] = FALSE;
  *
  * A local file system path where private files will be stored. This directory
  * must be absolute, outside of the Drupal installation directory and not
- * accessible over the cms.
+ * accessible over the web.
  *
  * Note: Caches need to be cleared when this value is changed to make the
  * private:// stream wrapper available to the system.
@@ -617,7 +617,7 @@ $settings['update_free_access'] = FALSE;
  *
  * A local file system path where temporary files will be stored. This directory
  * must be absolute, outside of the Drupal installation directory and not
- * accessible over the cms.
+ * accessible over the web.
  *
  * If this is not set, the default for the operating system will be used.
  *
@@ -890,6 +890,3 @@ $settings['migrate_node_migrate_type_classic'] = FALSE;
 # if (file_exists($app_root . '/' . $site_path . '/settings.local.php')) {
 #   include $app_root . '/' . $site_path . '/settings.local.php';
 # }
-
-
-$settings['config_sync_directory'] = $app_root . '/config/sync';

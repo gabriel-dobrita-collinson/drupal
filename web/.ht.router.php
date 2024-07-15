@@ -2,16 +2,16 @@
 
 /**
  * @file
- * Router script for the built-in PHP cms server.
+ * Router script for the built-in PHP web server.
  *
- * The built-in cms server should only be used for development and testing as it
+ * The built-in web server should only be used for development and testing as it
  * has a number of limitations that makes running Drupal on it highly insecure
  * and somewhat limited.
  *
  * Note that:
  * - The server is single-threaded, any requests made during the execution of
  *   the main request will hang until the main request has been completed.
- * - The cms server does not enforce any of the settings in .htaccess in
+ * - The web server does not enforce any of the settings in .htaccess in
  *   particular a remote user will be able to download files that normally would
  *   be protected from direct access such as .module files.
  *
