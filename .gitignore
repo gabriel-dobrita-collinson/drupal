@@ -1,6 +1,18 @@
 .idea
 /vendor
 
+/web/sites/*/default.settings.php
+
+/web/sites/*/files
+/web/sites/*/public
+/web/sites/*/private
+/web/sites/*/files-public
+/web/sites/*/files-private
+
+/web/sites/*/translations
+/web/sites/*/tmp
+/web/sites/*/cache
+
 /web/core
 /web/modules/README.txt
 /web/profiles/README.txt
@@ -25,5 +37,4 @@
 /web/robots.txt
 /web/update.php
 /web/web.config
-
 /web/modules/contrib
