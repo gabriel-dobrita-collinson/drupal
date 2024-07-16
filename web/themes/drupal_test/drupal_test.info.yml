@@ -1,0 +1,21 @@
+name: Test Theme
+type: theme
+description: Custom Theme Description
+core_version_requirement: ^10
+package: Custom
+libraries:
+  - drupal_test/global-styling
+
+base theme: claro
+
+regions:
+  branding: Branding
+  navigation: Main navigation
+  search: Search
+  featured: Featured
+  content: Content
+  right_sidebar: Right sidebar
+  footer_first: Footer First
+  footer_second: Footer Second
+  footer_third: Footer Third
+  footer_bottom: Footer Bottom
