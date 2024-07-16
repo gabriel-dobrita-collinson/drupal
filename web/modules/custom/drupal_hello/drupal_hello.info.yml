@@ -1,0 +1,5 @@
+name: 'Drupal Hello'
+type: module
+description: 'A simple module to say hello.'
+core_version_requirement: ^10
+package: Custom
