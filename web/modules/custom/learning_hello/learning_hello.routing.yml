@@ -1,0 +1,7 @@
+learning_hello.hello:
+  path: '/hello'
+  defaults:
+    _controller: '\Drupal\learning_hello\Controller\HelloController::hello'
+    _title: 'Hello'
+  requirements:
+    _permission: 'access content'
