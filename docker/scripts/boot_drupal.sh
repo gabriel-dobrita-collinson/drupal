@@ -11,7 +11,7 @@ COMPOSER_MEMORY_LIMIT=-1 composer install -n
 
 if [[ "${INSTALL_FLAG}" == "ON" ]]; then
   echo "Starting fresh install..."
-  drush site-install -y standard --db-url=mysql://${DRUPAL_DB_USER}:${DRUPAL_DB_PASSWORD}@${DRUPAL_DB_HOST}/${DRUPAL_DB_NAME} --site-name=Drupal --account-name=admin --account-pass=admin --account-mail=dobritagabriel@gmail.com
+  drush site-install -y learning --db-url=mysql://${DRUPAL_DB_USER}:${DRUPAL_DB_PASSWORD}@${DRUPAL_DB_HOST}/${DRUPAL_DB_NAME} --site-name=Drupal --account-name=admin --account-pass=admin --account-mail=dobritagabriel@gmail.com
 else
   echo "Continuing from existing setup..."
   drush updb -y

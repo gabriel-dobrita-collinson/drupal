@@ -1,5 +1,5 @@
 _core:
-  default_config_hash: ijfbzDTN4CbE7Sr-6ubWzy_t1vH4OtU1doNCLssVz-4
+  default_config_hash: HlN7eAN2N4JIHsYv56V4E7sqC9bS609KwvGFjyD_mgk
 langcode: en
 uuid: 6742db5b-4870-4f75-931e-5d212b1e7cf9
 name: Drupal
@@ -8,7 +8,7 @@ slogan: ''
 page:
   403: ''
   404: ''
-  front: /node
+  front: /user/login
 admin_compact_mode: false
 weight_select_max: 100
 default_langcode: en

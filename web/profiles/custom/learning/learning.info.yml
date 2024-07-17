@@ -1,0 +1,58 @@
+name: Learning
+type: profile
+description: 'Learning profile'
+core_version_requirement: '^10'
+
+install:
+  - announcements_feed
+  - automated_cron
+  - big_pipe
+  - block
+  - block_content
+  - breakpoint
+  - ckeditor5
+  - comment
+  - config
+  - contact
+  - contextual
+  - datetime
+  - dblog
+  - draggableviews
+  - dynamic_page_cache
+  - editor
+  - field
+  - field_ui
+  - file
+  - filter
+  - help
+  - history
+  - image
+  - learning_hello
+  - link
+  - menu_link_content
+  - menu_ui
+  - mysql
+  - node
+  - options
+  - page_cache
+  - path
+  - path_alias
+  - search
+  - shortcut
+  - system
+  - taxonomy
+  - text
+  - toolbar
+  - update
+  - user
+  - views_ui
+  - views
+
+dependencies:
+  - node
+  - block
+  - views
+
+themes:
+  - claro
+  - learning_theme
