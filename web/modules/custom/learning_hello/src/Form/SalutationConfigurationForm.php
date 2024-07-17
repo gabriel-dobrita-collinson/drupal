@@ -57,4 +57,5 @@ class SalutationConfigurationForm extends ConfigFormBase {
       $form_state->setErrorByName('salutation', $this->t('This salutation is too long'));
     }
   }
+
 }
