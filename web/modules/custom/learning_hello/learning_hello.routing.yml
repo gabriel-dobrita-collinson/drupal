@@ -5,3 +5,11 @@ learning_hello.hello:
     _title: 'Hello'
   requirements:
     _permission: 'access content'
+
+learning_hello.greeting_form:
+  path: '/admin/config/salutation-configuration'
+  defaults:
+    _form: '\Drupal\learning_hello\Form\SalutationConfigurationForm'
+    _title: 'Salutation configuration'
+  requirements:
+    _permission: 'administer site configuration'
