@@ -1,0 +1,22 @@
+uuid: c960110f-17ca-46a3-8a10-255749089111
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - learning_theme
+_core:
+  default_config_hash: eYL19CLDyinGTWYQfBD1DswWzglEotE_kHnHx3AxTXM
+id: learning_theme_powered
+theme: learning_theme
+region: footer_bottom
+weight: 0
+provider: null
+plugin: system_powered_by_block
+settings:
+  id: system_powered_by_block
+  label: 'Powered by Drupal'
+  label_display: '0'
+  provider: system
+visibility: {  }
