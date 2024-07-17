@@ -1,0 +1,22 @@
+uuid: 37c7979c-8ff9-4359-896c-ac4da203f923
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - learning_theme
+_core:
+  default_config_hash: erQSEZF2XUjNmgTl0uNRBzmg18ZGXwUcw2FhApoeuHk
+id: learning_theme_content
+theme: learning_theme
+region: content
+weight: 0
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  label_display: '0'
+  provider: system
+visibility: {  }

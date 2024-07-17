@@ -1,0 +1,23 @@
+uuid: a126a1f8-eaa0-4f98-a6c3-3dd8f644ea1f
+langcode: en
+status: true
+dependencies:
+  module:
+    - search
+  theme:
+    - learning_theme
+_core:
+  default_config_hash: yEBET0cqDbk8dkWzaJw-8CKft0961VBflsISoSR6Lj8
+id: learning_theme_search_form_narrow
+theme: learning_theme
+region: branding
+weight: -4
+provider: null
+plugin: search_form_block
+settings:
+  id: search_form_block
+  label: 'Search form (narrow)'
+  label_display: '0'
+  provider: search
+  page_id: ''
+visibility: {  }
