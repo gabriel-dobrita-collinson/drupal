@@ -1,0 +1,16 @@
+name: Learning
+type: profile
+description: 'Learning profile'
+core_version_requirement: '^10'
+
+install:
+  - learning_hello
+  - shortcut
+
+dependencies:
+  - node
+  - block
+  - views
+
+themes:
+  - learning_theme
