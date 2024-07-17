@@ -4,8 +4,8 @@ namespace Drupal\learning_hello\Plugin\Block;
 
 use Drupal\Core\Block\BlockBase;
 use Drupal\Core\Plugin\ContainerFactoryPluginInterface;
-use Symfony\Component\DependencyInjection\ContainerInterface;
 use Drupal\learning_hello\HelloSalutation;
+use Symfony\Component\DependencyInjection\ContainerInterface;
 
 /**
  * Provides a 'Hello Salutation' Block.
@@ -61,4 +61,5 @@ class HelloSalutationBlock extends BlockBase implements ContainerFactoryPluginIn
       '#markup' => $this->salutation->getSalutation(),
     ];
   }
+
 }

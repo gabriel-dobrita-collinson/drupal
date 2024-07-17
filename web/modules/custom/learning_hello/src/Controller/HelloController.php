@@ -2,21 +2,24 @@
 
 namespace Drupal\learning_hello\Controller;
 
-use Symfony\Component\DependencyInjection\ContainerInterface;
 use Drupal\Core\Controller\ControllerBase;
 use Drupal\learning_hello\HelloSalutation;
+use Symfony\Component\DependencyInjection\ContainerInterface;
 
+/**
+ *
+ */
 class HelloController extends ControllerBase {
 
   /**
-   * @var HelloSalutation
+   * @var \Drupal\learning_hello\HelloSalutation
    */
   protected $helloSalutation;
 
   /**
    * HelloController constructor.
    *
-   * @param HelloSalutation $helloSalutation
+   * @param \Drupal\learning_hello\HelloSalutation $helloSalutation
    */
   public function __construct(HelloSalutation $helloSalutation) {
     $this->helloSalutation = $helloSalutation;
@@ -39,4 +42,5 @@ class HelloController extends ControllerBase {
       '#markup' => $this->helloSalutation->getSalutation(),
     ];
   }
+
 }
