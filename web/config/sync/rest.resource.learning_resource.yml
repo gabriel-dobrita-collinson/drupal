@@ -1,0 +1,18 @@
+uuid: f9e07671-f583-44f4-9a13-a189a125c833
+langcode: en
+status: true
+dependencies:
+  module:
+    - learning_rest_api
+    - serialization
+    - user
+id: learning_resource
+plugin_id: learning_resource
+granularity: resource
+configuration:
+  methods:
+    - GET
+  formats:
+    - json
+  authentication:
+    - cookie
