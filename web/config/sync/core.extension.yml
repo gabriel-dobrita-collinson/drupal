@@ -14,7 +14,6 @@ module:
   contextual: 0
   datetime: 0
   dblog: 0
-  draggableviews: 0
   dynamic_page_cache: 0
   editor: 0
   field: 0
@@ -25,6 +24,7 @@ module:
   history: 0
   image: 0
   learning_hello: 0
+  learning_rest_api: 0
   link: 0
   menu_link_content: 0
   menu_ui: 0
@@ -34,7 +34,10 @@ module:
   page_cache: 0
   path: 0
   path_alias: 0
+  rest: 0
+  restui: 0
   search: 0
+  serialization: 0
   shortcut: 0
   system: 0
   taxonomy: 0
@@ -48,5 +51,4 @@ module:
 theme:
   olivero: 0
   claro: 0
-  learning_theme: 0
 profile: standard
